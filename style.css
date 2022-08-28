@@ -1,0 +1,255 @@
+@font-face {
+    font-family: Raleway;
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: 'Raleway';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0px 15px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+/* navbar */
+.header {
+    background-color: #2a6877;
+    width: 100%;
+    float: left;
+}
+
+.headerStyle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerStyle .logo {
+    width: 30%;
+}
+
+.headerStyle .links {
+    width: 70%;
+}
+
+.headerStyle .links ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+.headerStyle .links ul li {
+    padding: 10px 12px;
+}
+
+.headerStyle .links ul li a {
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.3s all ease;
+}
+
+.headerStyle .links ul li a:hover {
+    color: rgb(14, 20, 14);
+    transition: 0.5s all ease;
+}
+
+/* intro  */
+.intro {
+    padding: 18px 0;
+    width: 100%;
+    float: left;
+    background-color: #f0f1f3;
+}
+
+/* requirments list  */
+.list {
+    width: 100%;
+    float: left;
+    background-color: #f0f1f3;
+}
+
+.introStyle {
+    text-align: center;
+}
+
+.introStyle h2{
+    margin-bottom: 5px;
+}
+
+.line {
+    background-color: #2a6877;
+    height: 3px;
+    width: 68px;
+    margin: auto;
+}
+
+.listStyle {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listStyle .functional {
+    width: 50%;
+    float: left;
+    margin: 0px 5px;
+}
+
+.listStyle .nonFunctional {
+    width: 50%;
+    float: left;
+    margin: 0px 5px;
+}
+
+.accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 2px solid #2a6877;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.active,
+.accordion:hover {
+    background-color: #418b7a;
+    color: white;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    padding-bottom: 10px;
+    transition: 0.5s ease-out;
+}
+
+.panel ul {
+    padding: 8px 5px;
+}
+
+.panel ul li{
+    list-style: none;
+    margin: 0;
+}
+
+.panel ul li:hover{
+    color: #418b7a;
+    cursor: pointer;
+}
+
+/* estimation model  */
+.est {
+    background-color: #3e8b78;
+    width: 100%;
+    float: left;
+    padding: 55px 0px;
+}
+
+.estimationModel {
+    width: 100%;
+    display: flex;
+}
+
+.estimationModel .sect50{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+}
+
+.estimationModel .sect50 h3{
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.estimationModel .sect50 input{
+    border: 0;
+    padding: 10px;
+    outline-color: #418b7a;
+    border-radius: 5px;
+    background-color: #f0f1f3;
+}
+
+.estimationModel .sect50 button{
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(198 255 239);
+}
+
+.estimationModel .sect50 button:hover{
+    color: white;
+    background-color: rgb(37, 37, 37);
+    cursor: pointer;
+}
+
+.rate {
+    display: none;
+}
+
+.rateIt{
+    display: block;
+}
+
+/* footer  */
+.footer {
+    width: 100%;
+    float: left;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+.footerStyle{
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discord, .email {
+    font-weight: 600;
+}
+
+#discord, #email{
+    color: #f0f1f3;
+    font-weight: 100;
+}
+
+#email:hover{
+    color: rgb(170, 170, 170);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#discord:hover{
+    color: rgb(170, 170, 170);
+    text-decoration: underline;
+    cursor: pointer;
+}

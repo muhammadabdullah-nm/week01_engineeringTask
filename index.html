@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 01 - Engineering</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- header  -->
+    <section class="header">
+        <div class="container">
+            <div class="headerStyle">
+                <div class="logo">
+                    <h2>AI Lawyer</h2>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- intro section  -->
+    <section class="intro">
+        <div class="container">
+            <div class="introStyle">
+                <h2 class="heading">WELCOME TO AI LAWYER</h2>
+                <div class="line"></div>
+                <p>Where we help people to look into their problem and by matching a perfect solution for them. <br>
+                    All AI based. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- list of functional and non functional requirments  -->
+    <section class="list">
+        <div class="container">
+            <div class="listStyle">
+                <div class="functional">
+                    <button class="accordion">Functional Requirements</button>
+                    <div class="panel" id="functional">
+                        <ul class="functional">
+                            <li>1. Log in / Sign up</li>
+                            <li>2. Paying amount online through Easypaisa/Jazzcash/Bank transfer</li>
+                            <li>3. Getting query from the user in Urdu/English</li>
+                            <li>4. Showing relevant cases</li>
+                            <li>5. NewsFeed showing recent cases</li>
+                            <li>6. Categorized cases with respective law</li>
+                            <li>7. AI based query resolver</li>
+                            <li>8. AI based matching the user query to respective category</li>
+                            <li>9. Showing Paistan Panel Code and Constitution</li>
+                            <li>10. Search availablity for users in Constitution</li>
+                            <li>11. Descriptive portal for lawyers with additional personal information</li>
+                            <li>12. Direct lawyers contact through website</li>
+                            <li>13. Option for user to select AI Lawyer or Person Lawyer</li>
+                            <li>14. User can easily search its query without paying in Constitution portal</li>
+                            <li>15. User can also hire a lawyer for his/her case from website</li>
+                            <li>16. AI based bot messenger to facilitate user</li>
+                            <li>17. User can also give reference to others through the website</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nonFunctional">
+                    <button class="accordion">Non-Functional Requirements</button>
+                    <div class="panel">
+                        <ul class="nonFunctional">
+                            <li>1. Security for user profile</li>
+                            <li>2. Email verification when signing up</li>
+                            <li>3. All personal details to be secure</li>
+                            <li>4. Messages between user and lawyer to be encrypted end-to-end</li>
+                            <li>5. Checking online/availability of lawyer before assigning the case</li>
+                            <li>6. Speed optimization</li>
+                            <li>7. Refresh option to shuffle the lawyers</li>
+                            <li>8. Best lawyers to be on the top of search</li>
+                            <li>9. Search suggestions related to user query</li>
+                            <li>10. Suggestions for user on recent cases</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- estimation models  -->
+    <section class="est">
+        <div class="container">
+            <div class="estimationModel">
+                <div class="sect50">
+                    <h3>Book a lawyer</h3>
+                    <p>By booking your lawyer it will assist you regarding your case and will guide you the best
+                        possible
+                        solution. Not only this it will also give you reference of each of the problems you have with
+                        official
+                        <b>Pakistan Pancel Code & Constitution of Pakistan.</b> You can check our rates by simply
+                        entering number
+                        of hours for your counseling.
+                    </p>
+                </div>
+                <div class="sect50">
+                    <h3>Check Rates</h3>
+                    <input type="number" name="" id="rateInput">
+                    <button type="submit" id="submit" onclick="calculateRate()">Check Rate</button>
+                    <div class="rate">
+                        <p>You will pay: Rs. <span id="amount"></span></p>
+                        <p>Rs.600/Hr</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footerStyle">
+                <div class="discord">Discord ID: <span id="discord">abdullah_lashari#5600</span></div>
+                <div class="email">Email Link:
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=someone@example.com" target="_blank"
+                        id="email">lashari.m09@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
